@@ -21,6 +21,7 @@
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
+
 // 10. Select all the `li` element and store in `allTopics`
 
 // 11. Select all the input element of any type and store in `allInput`
