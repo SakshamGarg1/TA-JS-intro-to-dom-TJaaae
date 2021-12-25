@@ -31,6 +31,7 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 // the html for single todo will look like given below
 /* 
 <ul>
+
   <li>
     <p>Learn DOM</p>
     <input type="checkbox" checked name="" id="">
