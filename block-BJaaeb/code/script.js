@@ -1,19 +1,28 @@
 /*
-
 Write a function named `createInputElm` that accepts two parameter (label and `type`) type
 default value to be "text" and return the input element inside label. (create it using `createElement`)
-
 */
 
-// Your code goes here
+function createInputElm(label, type="text"){
+let label = document.createElement("label");
+let input = document.createElement("input");
+input.type=type;
 
+label.innerText =labelMessage;
+label.append(input);
+return label;
+}
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
 
 // 2. Do the same thing as above using string literal like `<h1>Hello</h1>`
 
-// Your code goes here
+
+function createInputElm(labelMessage, type="text"){
+  let html = `<label> ${labelMessage}</label>`;
+  input.type=type;
+  
 
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
@@ -31,7 +40,6 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 // the html for single todo will look like given below
 /* 
 <ul>
-
   <li>
     <p>Learn DOM</p>
     <input type="checkbox" checked name="" id="">
